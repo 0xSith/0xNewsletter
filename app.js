@@ -14,7 +14,7 @@ mailchimp.setConfig({
 app.use(express.static("public"))
 app.use(bodyParser.urlencoded({extended:true}))
 
-app.listen(3000, (req,res) =>{
+app.listen(process.env.PORT || 3000, (req,res) =>{
   console.log("Server is up and running on port 3000.");
 })
 
