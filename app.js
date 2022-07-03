@@ -11,7 +11,7 @@ mailchimp.setConfig({
   server: "us13",
 });
 
-app.use(express.static("public"))
+app.use(express.static("Public"))
 app.use(bodyParser.urlencoded({extended:true}))
 
 app.listen(process.env.PORT || 3000, (req,res) =>{
