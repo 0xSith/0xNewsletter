@@ -6,9 +6,12 @@ const https = require("https");
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 const listId = "0e2fd8bd5d";
 
+
+
+
 mailchimp.setConfig({
-  apiKey: "82d296af8bf2faa91e1971a8556c284c-us13",
-  server: "us13",
+  apiKey: {"You're API DataKey from Mailchimp"},
+  server: {"You're server ID"},
 });
 
 app.use(express.static("Public"))
